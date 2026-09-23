@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Contacto | Curly Beauty Studio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="img_logo"
+                 src="img/logo_curly_beauty_studio_original.webp"
+                 alt="Logo de Curly Beauty Studio">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <div class="formulario-contacto">
+                <h2>Reserva tu cita</h2>
+                <p>Completa el siguiente formulario y nos contactaremos
+                    contigo para confirmar tu cita.
+                </p>
+                <form> 
+                    <fieldset> 
+                        <legend>Datos para tu reserva</legend>
+                        <div class="campo-formulario">
+                            <label for="nombre-apellido">
+                                Nombre completo y apellido
+                            </label>
+                            <input
+                                type="text"
+                                id="nombre-apellido"
+                                name="nombre-apellido"
+                                minlength="3"
+                                maxlength="50"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="correo">
+                                Correo electrónico*
+                            </label>
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="ejemplo@gmail.com"
+                                autocomplete="email"
+                                required
+                           >
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="telefono">
+                                Teléfono*
+                            </label>
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                pattern="[0-9]{9}"
+                                placeholder="987654321"
+                                autocomplete="tel"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="servicio">
+                                Servicio
+                            </label>
+                            <select name="servicio" id="servicio">
+                                <option value="">
+                                    Selecciona un servicio
+                                </option>
+                                <option value="corte">
+                                    Corte y definición
+                                </option>
+                                <option value="tratamiento">
+                                    Tratamiento e hidratación
+                                </option>
+                                <option value="asesoria">
+                                    Asesoría de rutina personalizada
+                                </option>
+                            </select>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="fecha">
+                                Fecha preferida
+                            </label>
+                            <input
+                                type="date"
+                                id="fecha"
+                                name="fecha"
+                            >
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="5"
+                                placeholder="Cuéntanos cómo podemos ayudarte..."
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit">
+                            Enviar consulta
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            
+            <section class="informacion-contacto">
+                <h2>Visítanos</h2>
+                <p>
+                    <strong>Ubicación:</strong> San Borja
+                </p>
+                <p>
+                    <strong>Horario:</strong><br>
+                    Lunes - Sábado<br>
+                    9:00 AM - 6:00 PM
+                </p>
+                <p>
+                    <strong>Teléfono:</strong><br>
+                    (+51) 909 009 090
+                </p>
+            </section>
+            
+            <section class="redes-sociales">
+                <h2>Síguenos</h2>
+                <div class="iconos-redes">
+                    <a href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-contenido">
+
+            <p>Un espacio creado con amor para cuidar y celebrar
+              tus rizos naturales.
+            </p>
+
+            <p>&copy; 2026 Curly Beauty Studio.
+               Todos los derechos reservados.
+            </p>
+
+            <p>Hecho con amor para amantes de los rizos.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
